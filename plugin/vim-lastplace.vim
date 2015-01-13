@@ -7,6 +7,11 @@
 " Version:     1.0.0
 " ============================================================================
 
+if exists("b:loaded_lastplace") || &cp
+	finish
+endif
+let b:loaded_lastplace = 1
+
 scriptencoding utf-8
 
 if !exists('g:lastplace_ignore')
