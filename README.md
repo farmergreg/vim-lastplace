@@ -11,7 +11,7 @@ ignore specific file types. By default git, svn, and mercurial
 commit messages are ignored.
 
 You can configure what file types to ignore by setting g:lastplace_ignore.
-For example to only ignore git and snv commit messages try this in your vimrc:
+For example to only ignore git and svn commit messages try this in your vimrc:
 
         let g:lastplace_ignore = "gitcommit,svn"
 
