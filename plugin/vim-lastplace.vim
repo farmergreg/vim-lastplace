@@ -7,10 +7,10 @@
 " Version:     2.0.0
 " ============================================================================
 
-if exists("b:loaded_lastplace") || &cp
+if exists("b:loaded_lastplace_plugin") || &cp
 	finish
 endif
-let b:loaded_lastplace = 1
+let b:loaded_lastplace_plugin = 1
 
 scriptencoding utf-8
 
@@ -36,7 +36,7 @@ fu! s:lastplace()
 	endif
 endf
 
-augroup vim_lastplace_plugin
+augroup lastplace_plugin
 	autocmd!
 	autocmd BufReadPost * call s:lastplace()
 augroup END
