@@ -36,4 +36,7 @@ fu! s:lastplace()
 	endif
 endf
 
-au BufReadPost * call s:lastplace()
+augroup vim_lastplace_plugin
+	autocmd!
+	autocmd BufReadPost * call s:lastplace()
+augroup END
