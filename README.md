@@ -6,12 +6,14 @@ Intelligently reopen files where you left off.
 
 ## Introduction
 
-Intelligently reopen files where you left off. With the option to
-ignore specific file types. By default git, svn, and mercurial
-commit messages are ignored.
+Intelligently reopen files where you left off.  By default git,
+svn, and mercurial commit messages are ignored because you
+probably want to type a new message and not re-edit the previous
+one.
 
-You can configure what file types to ignore by setting g:lastplace_ignore.
-For example to only ignore git and svn commit messages try this in your vimrc:
+You can configure what file types to ignore by setting
+g:lastplace_ignore. For example to only ignore git and svn commit
+messages try this in your vimrc:
 
         let g:lastplace_ignore = "gitcommit,svn"
 
@@ -25,21 +27,21 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 ### 2.0.0
 
-- center the screen when restoring the cursor position
-- if at the end of a file, keep as much of it on screen as possible
+- Center the screen when restoring the cursor position.
+- When at the end of a file, keep as much of it on screen as possible.
 
 
 ### 1.0.0
 
-- initial version
+- Initial version.
 
 ## About
 
-Get the latest version submit pull requests, and file bug reports on GitHub:
+Get the latest version submit pull requests, and file bug reports
+on GitHub:
 - https://github.com/dietsche/vim-lastplace
 
 If you like this plugin, please star and rate it on these sites:
 
 - [GitHub](https://github.com/dietsche/vim-lastplace)
 - [Vim.org](http://www.vim.org/scripts/script.php?script_id=5090)
-
