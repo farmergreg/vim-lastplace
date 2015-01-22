@@ -30,7 +30,7 @@ fu! s:lastplace()
 			"pressed zz here, there would be blank lines at the
 			"bottom of the screen. We intentionally leave the
 			"last line blank by pressing <c-e> so the user has a
-			"clue that they are at the end of the file.
+			"clue that they are near the end of the file.
 			exe "normal! \G'\"\<c-e>"
 		endif
 	endif
