@@ -23,7 +23,7 @@ fu! s:lastplace()
 		if line("$") - line("'\"") > ((line("w$") - line("w0")) / 2) - 1
 			"if we're not at the bottom of the file, center the
 			"cursor on the screen after we make the jump
-			exe "normal! g`\"zz"
+			execute "normal! g`\"zz"
 		else
 			"otherwise, show as much context as we can by jumping
 			"to the end of the file and then to the mark. If we
@@ -31,7 +31,7 @@ fu! s:lastplace()
 			"bottom of the screen. We intentionally leave the
 			"last line blank by pressing <c-e> so the user has a
 			"clue that they are near the end of the file.
-			exe "normal! \G'\"\<c-e>"
+			execute "normal! \G'\"\<c-e>"
 		endif
 	endif
 endf
