@@ -37,7 +37,7 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 ## About
 
-Get the latest version submit pull requests, and file bug reports
+Get the latest version, submit pull requests, and file bug reports
 on GitHub:
 - https://github.com/dietsche/vim-lastplace
 
