@@ -25,13 +25,13 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 ### 2.0.0
 
-    - center the screen when restoring the cursor position
-    - if at the end of a file, keep as much of it on screen as possible
+- center the screen when restoring the cursor position
+- if at the end of a file, keep as much of it on screen as possible
 
 
 ### 1.0.0
 
-    - initial version
+- initial version
 
 ## About
 
@@ -40,6 +40,6 @@ Get the latest version submit pull requests, and file bug reports on GitHub:
 
 If you like this plugin, please star and rate it on these sites:
 
-    - [GitHub](https://github.com/dietsche/vim-lastplace)!
-    - [Vim.org](http://www.vim.org/scripts/script.php?script_id=5090)
+- [GitHub](https://github.com/dietsche/vim-lastplace)!
+- [Vim.org](http://www.vim.org/scripts/script.php?script_id=5090)
 
