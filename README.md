@@ -1,4 +1,4 @@
-# vim-lastplace v2.0.0
+# vim-lastplace v2.0.1
 Intelligently reopen files where you left off.
 
 - Author  :  Greg Dietsche
@@ -24,6 +24,10 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
     git clone git://github.com/dietsche/vim-lastplace.git
 
 ## Version History
+
+### 2.0.1
+
+- add gitrebase filetype to the ignore list.
 
 ### 2.0.0
 
