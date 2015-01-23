@@ -27,7 +27,7 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 ### 2.0.1
 
-- add gitrebase filetype to the ignore list.
+- Add gitrebase filetype to the ignore list.
 
 ### 2.0.0
 
