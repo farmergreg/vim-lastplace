@@ -1,10 +1,4 @@
 # vim-lastplace v2.0.1
-Intelligently reopen files where you left off.
-
-- Author  :  Greg Dietsche
-- Web Page: http://www.gregd.org/
-
-## Introduction
 
 Intelligently reopen files where you left off.  By default git,
 svn, and mercurial commit messages are ignored because you
@@ -40,6 +34,9 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 - Initial version.
 
 ## About
+
+- Author  :  Greg Dietsche
+- Web Page: http://www.gregd.org/
 
 Get the latest version, submit pull requests, and file bug reports
 on GitHub:
