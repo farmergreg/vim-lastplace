@@ -35,6 +35,10 @@ fu! s:lastplace()
 				execute "normal! \G'\"\<c-e>"
 			endif
 		endif
+		if foldclosed(".")!=-1
+			"if we're in a fold, make the current line visible
+			execute "normal! zA"
+		endif
 	endif
 endf
 
