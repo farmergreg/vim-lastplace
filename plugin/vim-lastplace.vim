@@ -37,7 +37,7 @@ fu! s:lastplace()
 		endif
 		if foldclosed(".") != -1
 			"if we're in a fold, make the current line visible
-			execute "normal! zA"
+			execute "normal! zv"
 		endif
 	endif
 endf
