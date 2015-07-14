@@ -1,4 +1,4 @@
-# vim-lastplace v2.0.1
+# vim-lastplace v3.0.0
 
 Intelligently reopen files where you left off.  By default git,
 svn, and mercurial commit messages are ignored because you
@@ -19,6 +19,10 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 ## Version History
 
+### 3.0.0
+
+- Open folds if the last edited area is inside a closed fold.
+
 ### 2.0.1
 
 - Add gitrebase filetype to the ignore list.
@@ -27,7 +31,6 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
 - Center the screen when restoring the cursor position.
 - When at the end of a file, keep as much of it on screen as possible.
-
 
 ### 1.0.0
 
