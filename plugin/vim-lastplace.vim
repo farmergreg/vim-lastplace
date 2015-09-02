@@ -44,5 +44,5 @@ endf
 
 augroup lastplace_plugin
 	autocmd!
-	autocmd BufReadPost * call s:lastplace()
+	autocmd BufWinEnter * call s:lastplace()
 augroup END
