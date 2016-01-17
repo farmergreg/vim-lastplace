@@ -17,6 +17,9 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
     cd ~/.vim/bundle
     git clone git://github.com/dietsche/vim-lastplace.git
 
+## Miscellaneous
+This plugin is complete and stable. Don't be afraid to try it out even though there isn't a lot of recent activity in this repository. If you do find something, please submit a pull request that fixes whatever problem you're having. I typically respond within a week or less.
+
 ## Version History
 
 ### 3.0.0
