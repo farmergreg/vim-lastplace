@@ -1,6 +1,6 @@
 # vim-lastplace v3.0.1
 
-Intelligently reopen files where you left off.  By default git,
+Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
 probably want to type a new message and not re-edit the previous
 one.
