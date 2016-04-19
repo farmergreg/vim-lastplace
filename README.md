@@ -4,7 +4,13 @@ Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
 probably want to type a new message and not re-edit the previous
 one.
+## Advantages
+Advantages over the snippets that can be found around the net include:
+* It won't jump into the middle of nowhere when editing commit messages
+* If you're at the end of a file, it will try to keep as much of the file on screen as possible rather than just centering on the lastline.
+* It will open folds if needed.
 
+## Configuration
 You can configure what file types to ignore by setting
 g:lastplace_ignore. For example to only ignore git and svn commit
 messages try this in your vimrc:
