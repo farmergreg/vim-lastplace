@@ -7,7 +7,7 @@ one.
 ## Advantages
 Advantages over the snippets that can be found around the net include:
 * It won't jump into the middle of nowhere when editing commit messages
-* If you're at the end of a file, it will try to keep as much of the file on screen as possible rather than just centering on the lastline.
+* If you're at the end of a file, it will try to keep as much of the file on screen as possible rather than just centering on the last line.
 * It will open folds if needed.
 
 ## Configuration
