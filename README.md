@@ -1,4 +1,4 @@
-# vim-lastplace v3.0.1
+# vim-lastplace v3.0.2
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -27,6 +27,9 @@ I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 This plugin is complete and stable. Don't be afraid to try it out even though there isn't a lot of recent activity in this repository. If you do find something, please submit a pull request that fixes whatever problem you're having. I typically respond within a week or less.
 
 ## Version History
+
+### 3.0.2
+- A fix for files that are smaller than the current screen size (issue #8)
 
 ### 3.0.1
 - A fix for files with modelines.
