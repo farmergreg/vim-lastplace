@@ -8,8 +8,8 @@ one.
 Advantages over the snippets that can be found around the net include:
 * Commit messages start at the top instead of the position of the last edit. This is important because many version control systems re-use the same file for editing of commit messages.
 * Maximizes Avaiable Context
-        * Center the cursor in the window after jumping
-        * Keeps as much of the file on screen as possible when jumping to the end of the file.
+    - Center the cursor in the window after jumping
+    - Keep as much of the file on screen as possible when at the end of the file.
 * Opens of folds if needed.
 
 ## Configuration
