@@ -10,7 +10,7 @@ Advantages over the snippets that can be found around the net include:
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
 * Commit messages automatically start beginning of the file. This is important because many version control systems re-use the same file for commit message editing.
-* Opens of folds if the last edit position is inside a fold.
+* Opens folds if the last edit position is inside a fold.
 
 ## Configuration
 You can configure what file types to ignore by setting
