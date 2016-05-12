@@ -9,7 +9,7 @@ Advantages over the snippets that can be found around the net include:
 * Maximizes Avaiable Context
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
-* Commit messages start at the top instead of the position of the last edit. This is important because many version control systems re-use the same file for commit message editing.
+* Commit messages automatically start beginning of the file. This is important because many version control systems re-use the same file for commit message editing.
 * Opens of folds if the last edit position is inside a fold.
 
 ## Configuration
