@@ -6,9 +6,11 @@ probably want to type a new message and not re-edit the previous
 one.
 ## Advantages
 Advantages over the snippets that can be found around the net include:
-* It won't jump into the middle of nowhere when editing commit messages
-* If you're at the end of a file, it will try to keep as much of the file on screen as possible rather than just centering on the last line.
-* It will open folds if needed.
+* Commit messages start at the top instead of the position of the last edit. This is important because many version control systems re-use the same file for editing of commit messages.
+* Maximizes Avaiable Context
+        * Center the cursor in the window after jumping
+        * Keeps as much of the file on screen as possible when jumping to the end of the file.
+* Opens of folds if needed.
 
 ## Configuration
 You can configure what file types to ignore by setting
