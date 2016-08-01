@@ -3,7 +3,7 @@
 " Description: Reopen files where you left off. Configurable.
 " Author:      Greg Dietsche <vim@gregd.org>
 " Licence:     MIT
-" Website:     http://www.gregd.org/
+" Website:     https://www.gregd.org/
 " Version:     3.0.2
 " ============================================================================
 

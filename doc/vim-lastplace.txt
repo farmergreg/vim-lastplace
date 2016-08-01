@@ -1,6 +1,6 @@
 *vim-lastplace*  Intelligently reopen files where you left off.
 
-Author:  Greg Dietsche <http://www.gregd.org/>
+Author:  Greg Dietsche <https://www.gregd.org/>
 License: MIT
 Version: 3.0.2
 
@@ -19,6 +19,6 @@ For example to only ignore git and svn commit messages try this in your vimrc:
 ABOUT                                           *vim-lastplace-about*
 
 Get the latest version and/or report a bug on GitHub:
-        http://github.com/dietsche/vim-lastplace
+        https://github.com/dietsche/vim-lastplace
 
  vim:tw=78:et:ft=help:norl:

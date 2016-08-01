@@ -58,7 +58,7 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 ## About
 
 - Author  :  Greg Dietsche
-- Web Page: http://www.gregd.org/
+- Web Page: https://www.gregd.org/
 
 Get the latest version, submit pull requests, and file bug reports
 on GitHub:
