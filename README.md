@@ -1,4 +1,4 @@
-# vim-lastplace v3.0.2
+# vim-lastplace v3.0.3
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -31,6 +31,9 @@ if there is very little recent activity in this repository. If you do find
 a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
+
+### 3.0.3
+- Point release for Debian packaging. Changes all http links to https. No code changes.
 
 ### 3.0.2
 - A fix for files that are smaller than the current screen size (issue #8)

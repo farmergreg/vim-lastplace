@@ -4,7 +4,7 @@
 " Author:      Greg Dietsche <vim@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
-" Version:     3.0.2
+" Version:     3.0.3
 " ============================================================================
 
 if exists("b:loaded_lastplace_plugin") || &cp
