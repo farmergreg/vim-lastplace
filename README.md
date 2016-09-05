@@ -1,4 +1,4 @@
-# vim-lastplace v3.0.3
+# vim-lastplace v3.0.4
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -19,6 +19,12 @@ messages try this in your vimrc:
 
         let g:lastplace_ignore = "gitcommit,svn"
 
+By default, folds are automatically opened when jumping to the last edit
+position. If you don not like this behavior your can disable it by putting
+this in your vimrc:
+
+        let g:lastplace_open_folds = 0
+
 ## Installation
 I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
 
@@ -31,6 +37,9 @@ if there is very little recent activity in this repository. If you do find
 a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
+
+### 3.0.4
+- Add g:lastplace_open_folds option.
 
 ### 3.0.3
 - Point release for Debian packaging. Changes all http links to https. No code changes.

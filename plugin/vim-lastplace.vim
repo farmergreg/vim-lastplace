@@ -4,7 +4,7 @@
 " Author:      Greg Dietsche <vim@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
-" Version:     3.0.3
+" Version:     3.0.4
 " ============================================================================
 
 if exists("b:loaded_lastplace_plugin") || &cp
@@ -16,6 +16,10 @@ scriptencoding utf-8
 
 if !exists('g:lastplace_ignore')
 	let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+endif
+
+if !exists('g:lastplace_open_folds')
+	let g:lastplace_open_folds = 1
 endif
 
 fu! s:lastplace()
@@ -44,7 +48,7 @@ fu! s:lastplace()
 				execute "normal! \G'\"\<c-e>"
 			endif
 		endif
-		if foldclosed(".") != -1
+		if foldclosed(".") != -1 && g:lastplace_open_folds
 			"if we're in a fold, make the current line visible
 			execute "normal! zv"
 		endif
