@@ -20,7 +20,7 @@ messages try this in your vimrc:
         let g:lastplace_ignore = "gitcommit,svn"
 
 By default, folds are automatically opened when jumping to the last edit
-position. If you don not like this behavior you can disable it by putting
+position. If you do not like this behavior you can disable it by putting
 this in your vimrc:
 
         let g:lastplace_open_folds = 0
