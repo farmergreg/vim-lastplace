@@ -14,16 +14,15 @@ Advantages over the snippets that can be found around the net include:
 
 ## Configuration
 You can configure what file types to ignore by setting
-g:lastplace_ignore. For example to only ignore git and svn commit
-messages try this in your vimrc:
+g:lastplace_ignore in your vimrc. By default it is set to:
 
-        let g:lastplace_ignore = "gitcommit,svn"
+	    let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
 
-By default, folds are automatically opened when jumping to the last edit
-position. If you do not like this behavior you can disable it by putting
-this in your vimrc:
+Folds are automatically opened when jumping to the last edit position. If you
+do not like this behavior you can disable it by putting this in your vimrc:
 
         let g:lastplace_open_folds = 0
+
 
 ## Installation
 I recommend using [pathogen.vim](https://github.com/tpope/vim-pathogen).
