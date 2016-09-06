@@ -16,7 +16,7 @@ Advantages over the snippets that can be found around the net include:
 You can configure what file types to ignore by setting
 g:lastplace_ignore in your vimrc. By default it is set to:
 
-	    let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+        let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
 
 Folds are automatically opened when jumping to the last edit position. If you
 do not like this behavior you can disable it by putting this in your vimrc:
