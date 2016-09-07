@@ -29,7 +29,7 @@ If you have debian-testing you can run:
 
     apt-get install vim-lastplace
     
-My prefered method is to use [pathogen.vim](https://github.com/tpope/vim-pathogen) to install and use vim-lastplace.
+You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
 
     cd ~/.vim/bundle
     git clone git://github.com/dietsche/vim-lastplace.git
