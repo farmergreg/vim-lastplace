@@ -25,7 +25,7 @@ do not like this behavior you can disable it by putting this in your vimrc:
 
 
 ## Installation
-If you have debian-testing you can run:
+Thanks to [David Rabel](https://github.com/NoreSoft)'s hard work, If you have debian-testing you can run:
 
     apt-get install vim-lastplace
     
