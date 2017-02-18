@@ -32,7 +32,7 @@ Thanks to [David Rabel](https://github.com/NoreSoft)'s hard work, you can instal
 You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
 
     cd ~/.vim/bundle
-    git clone git://github.com/dietsche/vim-lastplace.git
+    git clone git://github.com/farmergreg/vim-lastplace.git
 
 ## Miscellaneous
 This plugin is complete and stable. Please do not be afraid to try it even
@@ -77,9 +77,9 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 
 Get the latest version, submit pull requests, and file bug reports
 on GitHub:
-- https://github.com/dietsche/vim-lastplace
+- https://github.com/farmergreg/vim-lastplace
 
 If you like this plugin, please star and rate it on these sites:
 
-- [GitHub](https://github.com/dietsche/vim-lastplace)
+- [GitHub](https://github.com/farmergreg/vim-lastplace)
 - [Vim.org](http://www.vim.org/scripts/script.php?script_id=5090)
