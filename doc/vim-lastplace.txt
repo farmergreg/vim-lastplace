@@ -25,6 +25,6 @@ this in your vimrc:
 ABOUT                                           *vim-lastplace-about*
 
 Get the latest version and/or report a bug on GitHub:
-        https://github.com/dietsche/vim-lastplace
+        https://github.com/farmergreg/vim-lastplace
 
  vim:tw=78:et:ft=help:norl:
