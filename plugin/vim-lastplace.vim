@@ -28,7 +28,6 @@ endif
 
 fu! s:lastplace()
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
-		echom "vim-lastplace- you matched the buf type"
 		return
    	endif
 
