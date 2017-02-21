@@ -4,6 +4,7 @@ Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
 probably want to type a new message and not re-edit the previous
 one.
+
 ## Advantages
 Advantages over the snippets that can be found around the net include:
 * Maximizes Available Context
@@ -11,6 +12,17 @@ Advantages over the snippets that can be found around the net include:
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
 * Commit messages automatically start beginning of the file. This is important because many version control systems re-use the same file for commit message editing.
 * Opens folds if the last edit position is inside a fold.
+
+## Installation
+Thanks to [David Rabel](https://github.com/NoreSoft)'s hard work, you can install vim-lastplace from debian-testing:
+
+    apt-get install vim-lastplace
+    
+You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
+
+    cd ~/.vim/bundle
+    git clone git://github.com/farmergreg/vim-lastplace.git
+
 
 ## Configuration
 You can configure what file types to ignore by setting
@@ -29,17 +41,6 @@ Folds are automatically opened when jumping to the last edit position. If you
 do not like this behavior you can disable it by putting this in your vimrc:
 
         let g:lastplace_open_folds = 0
-
-
-## Installation
-Thanks to [David Rabel](https://github.com/NoreSoft)'s hard work, you can install vim-lastplace from debian-testing:
-
-    apt-get install vim-lastplace
-    
-You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
-
-    cd ~/.vim/bundle
-    git clone git://github.com/farmergreg/vim-lastplace.git
 
 ## Miscellaneous
 This plugin is complete and stable. Please do not be afraid to try it even
