@@ -4,7 +4,7 @@
 " Author:      Greg Dietsche <vim@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
-" Version:     3.0.4
+" Version:     3.1.0
 " ============================================================================
 
 if exists("b:loaded_lastplace_plugin") || &cp
@@ -22,10 +22,12 @@ if !exists('g:lastplace_open_folds')
 	let g:lastplace_open_folds = 1
 endif
 
+if !exists('g:lastplace_ignore_buftype')
+	let g:lastplace_ignore_buftype = "quickfix"
+endif
+
 fu! s:lastplace()
-   	" lastplace is redundant for quickfix windows
-   	" and can also cause crashes when quickfix size changes
-   	if &buftype == "quickfix"
+	if index(split(g:lastplace_ignore_buftype, ","), &buftype) == -1 
 		return
    	endif
 

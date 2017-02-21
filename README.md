@@ -1,4 +1,4 @@
-# vim-lastplace v3.0.4
+# vim-lastplace v3.1.0
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -14,9 +14,16 @@ Advantages over the snippets that can be found around the net include:
 
 ## Configuration
 You can configure what file types to ignore by setting
-g:lastplace_ignore in your vimrc. By default it is set to:
+g:lastplace_ignore in your vimrc. This is a comma separated list.
+By default it is set to:
 
         let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+
+You can configure buffer types to ignore by setting
+g:lastplace_ignore_buftype in your vimrc. This is a comma separated list.
+By default it is set to:
+
+        let g:lastplace_ignore_buftype = "quickfix"
 
 Folds are automatically opened when jumping to the last edit position. If you
 do not like this behavior you can disable it by putting this in your vimrc:
@@ -40,6 +47,10 @@ if there is very little recent activity in this repository. If you do find
 a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
+
+### 3.1.0
+- Add g:lastplace_ignore_buftype setting.
+- Update github links from username dietsche to farmergreg.
 
 ### 3.0.4
 - Add g:lastplace_open_folds option.
