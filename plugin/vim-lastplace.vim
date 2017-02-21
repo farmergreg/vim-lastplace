@@ -23,6 +23,12 @@ if !exists('g:lastplace_open_folds')
 endif
 
 fu! s:lastplace()
+   	" lastplace is redundant for quickfix windows
+   	" and can also cause crashes when quickfix size changes
+   	if &buftype == "quickfix"
+		return
+   	endif
+
 	if index(split(g:lastplace_ignore, ","), &filetype) == -1 
 		if line("'\"") > 0 && line("'\"") <= line("$")
 			"if the last edit position is set and is less than the
