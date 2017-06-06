@@ -35,7 +35,7 @@ You can configure buffer types to ignore by setting
 g:lastplace_ignore_buftype in your vimrc. This is a comma separated list.
 By default it is set to:
 
-        let g:lastplace_ignore_buftype = "quickfix"
+        let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 
 Folds are automatically opened when jumping to the last edit position. If you
 do not like this behavior you can disable it by putting this in your vimrc:
@@ -50,6 +50,7 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 ## Version History
 
 ### 3.1.1
+- add 'nofile' and 'help' to lastplace_ignore_buftype. (Issue [#14](https://github.com/farmergreg/vim-lastplace/issues/14))
 - Do not jump when a new file is created (Issue [#15](https://github.com/farmergreg/vim-lastplace/issues/15))
 
 ### 3.1.0

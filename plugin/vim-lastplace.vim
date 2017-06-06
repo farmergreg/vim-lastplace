@@ -23,7 +23,7 @@ if !exists('g:lastplace_open_folds')
 endif
 
 if !exists('g:lastplace_ignore_buftype')
-	let g:lastplace_ignore_buftype = "quickfix"
+	let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 endif
 
 fu! s:lastplace()
