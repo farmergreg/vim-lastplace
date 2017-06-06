@@ -50,7 +50,7 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 ## Version History
 
 ### 3.1.1
-- Do not jump when a new file is created (Issue [#3](https://github.com/farmergreg/vim-lastplace/issues/15))
+- Do not jump when a new file is created (Issue [#15](https://github.com/farmergreg/vim-lastplace/issues/15))
 
 ### 3.1.0
 - Add g:lastplace_ignore_buftype setting.
