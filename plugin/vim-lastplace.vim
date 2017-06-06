@@ -1,7 +1,7 @@
 " ============================================================================
 " File:        vim-lastplace.vim
 " Description: Reopen files where you left off. Configurable.
-" Author:      Greg Dietsche <vim@gregd.org>
+" Author:      Gregory L. Dietsche <vim@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
 " Version:     3.1.1

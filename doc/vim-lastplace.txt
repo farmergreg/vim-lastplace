@@ -1,6 +1,6 @@
 *vim-lastplace*  Intelligently reopen files where you left off.
 
-Author:  Greg Dietsche <https://www.gregd.org/>
+Author:  Gregory L. Dietsche <https://www.gregd.org/>
 License: MIT
 Version: 3.1.1
 
