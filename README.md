@@ -1,4 +1,4 @@
-# vim-lastplace v3.1.0
+# vim-lastplace v3.1.1
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -48,6 +48,9 @@ if there is very little recent activity in this repository. If you do find
 a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
+
+### 3.1.1
+- Do not jump when a new file is created (Issue [#3](https://github.com/farmergreg/vim-lastplace/issues/15))
 
 ### 3.1.0
 - Add g:lastplace_ignore_buftype setting.

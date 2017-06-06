@@ -4,7 +4,7 @@
 " Author:      Greg Dietsche <vim@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
-" Version:     3.1.0
+" Version:     3.1.1
 " ============================================================================
 
 if exists("b:loaded_lastplace_plugin") || &cp
@@ -27,6 +27,11 @@ if !exists('g:lastplace_ignore_buftype')
 endif
 
 fu! s:lastplace()
+	"if the does not exist on disk (is new) then do nothing
+	if empty(glob(@%))
+		return
+	endif
+
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
 		return
    	endif
