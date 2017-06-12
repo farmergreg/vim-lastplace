@@ -49,6 +49,7 @@ if there is very little recent activity in this repository. If you do find
 a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
+vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
 ### 3.1.1
 - Add 'nofile' and 'help' to lastplace_ignore_buftype. (Issue [#14](https://github.com/farmergreg/vim-lastplace/issues/14))
