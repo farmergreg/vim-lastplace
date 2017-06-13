@@ -44,7 +44,7 @@ fu! s:lastplace()
 		"if the last edit position is set and is less than the
 		"number of lines in this buffer.
 
-		if line("w$") == line("$") 
+		if line("w$") == line("$")
 			"if the last line in the current buffer is
 			"also the last line visible in this window
 			execute "normal! g`\""
