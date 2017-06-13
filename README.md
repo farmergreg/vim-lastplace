@@ -7,10 +7,10 @@ one.
 
 ## Advantages
 Advantages over the snippets that can be found around the net include:
+* Commit messages automatically start at the beginning of a file. This is important because many version control systems re-use the same file for commit message editing.
 * Maximizes Available Context
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
-* Commit messages automatically start at the beginning of a file. This is important because many version control systems re-use the same file for commit message editing.
 * Opens folds if the last edit position is inside a fold.
 * Works properly with new file templates and scripts that jump to a specific line in them.
 
