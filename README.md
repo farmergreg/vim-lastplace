@@ -53,7 +53,7 @@ vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
 ### 3.1.1
 - Add 'nofile' and 'help' to lastplace_ignore_buftype. (Issue [#14](https://github.com/farmergreg/vim-lastplace/issues/14))
-- Do not jump when a new file is created (Issue [#15](https://github.com/farmergreg/vim-lastplace/issues/15))
+- Do not jump when a new file is created (Issue [#15](https://github.com/farmergreg/vim-lastplace/issues/15), [#16](https://github.com/farmergreg/vim-lastplace/issues/16))
 
 ### 3.1.0
 - Add g:lastplace_ignore_buftype setting.
