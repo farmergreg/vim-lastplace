@@ -27,11 +27,6 @@ if !exists('g:lastplace_ignore_buftype')
 endif
 
 fu! s:lastplace()
-	"if the file does not exist on disk (a new, unsaved file) then do nothing
-	if empty(glob(@%))
-		return
-	endif
-
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
 		return
    	endif
@@ -39,6 +34,15 @@ fu! s:lastplace()
 	if index(split(g:lastplace_ignore, ","), &filetype) != -1
 		return
 	endif
+
+	try
+		"if the file does not exist on disk (a new, unsaved file) then do nothing
+		if empty(glob(@%))
+			return
+		endif
+	catch
+		return
+	endtry
 
 	if line("'\"") > 0 && line("'\"") <= line("$")
 		"if the last edit position is set and is less than the
