@@ -27,7 +27,7 @@ if !exists('g:lastplace_ignore_buftype')
 endif
 
 fu! s:lastplace()
-	"if the does not exist on disk (is new) then do nothing
+	"if the file does not exist on disk (a new, unsaved file) then do nothing
 	if empty(glob(@%))
 		return
 	endif
