@@ -24,9 +24,10 @@ You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other 
     cd ~/.vim/bundle
     git clone git://github.com/farmergreg/vim-lastplace.git
 
-Depending on which Vim package you're using, your Vim may be preconfigured with
-last-edit-position logic.  If so, you may want to disable that in favor of
-vim-lastplace. For example, for Vim as packaged with Git for Windows, you can edit
+Depending on which Vim package you're using, Vim may be preconfigured with
+last-edit-position logic that doesn't work quite as well as vim-lastplace.
+If so, you may want to disable that in favor of vim-lastplace. For example,
+for Vim as packaged with Git for Windows, you can edit
 `C:\Program Files\Git\etc\vimrc` and comment out the "Remember positions in files"
 `autocmd BufReadPost *` block.
 
