@@ -14,12 +14,8 @@ Advantages over the snippets that can be found around the net include:
 * Opens folds if the last edit position is inside a fold.
 * Works properly with new file templates and scripts that jump to a specific line in them.
 
-## Installation
-Thanks to [David Rabel](https://github.com/NoreSoft)'s hard work, you can install vim-lastplace from debian-testing:
-
-    apt-get install vim-lastplace
-    
-You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
+## Installation  
+You can use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
 
     cd ~/.vim/bundle
     git clone git://github.com/farmergreg/vim-lastplace.git
