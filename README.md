@@ -1,4 +1,4 @@
-# vim-lastplace v3.1.1
+# vim-lastplace v3.2.1
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -40,7 +40,7 @@ By default it is set to:
 
         let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 
-Folds are automatically opened when jumping to the last edit position. If you
+Closed folds are automatically opened when jumping to the last edit position. If you
 do not like this behavior you can disable it by putting this in your vimrc:
 
         let g:lastplace_open_folds = 0
@@ -52,6 +52,10 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
+
+### 3.2.1
+- Re-center screen when opening folds
+- Documentation fixes and updates
 
 ### 3.1.1
 - Add 'nofile' and 'help' to lastplace_ignore_buftype. (Issue [#14](https://github.com/farmergreg/vim-lastplace/issues/14))
