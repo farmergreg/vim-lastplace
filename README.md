@@ -14,11 +14,22 @@ Advantages over the snippets that can be found around the net include:
 * Opens folds if the last edit position is inside a fold.
 * Works properly with new file templates and scripts that jump to a specific line in them.
 
-## Installation  
-You can use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
+## Installation
 
-    cd ~/.vim/bundle
-    git clone git://github.com/farmergreg/vim-lastplace.git
+You can install vim-lastplace as a vim plugin without any additional tools
+
+```bash
+mkdir -p ~/.vim/pack/plugins/start
+rm -rf ~/.vim/pack/plugins/start/vim-lastplace
+git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.vim/pack/plugins/start/vim-lastplace
+```
+
+You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
+
+```bash
+cd ~/.vim/bundle
+git clone git://github.com/farmergreg/vim-lastplace.git
+```
 
 Depending on which Vim package you're using, Vim may be preconfigured with
 last-edit-position logic that doesn't work quite as well as vim-lastplace.
@@ -32,18 +43,24 @@ You can configure what file types to ignore by setting
 g:lastplace_ignore in your vimrc. This is a comma separated list.
 By default it is set to:
 
-        let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+```vim
+    let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+````
 
 You can configure buffer types to ignore by setting
 g:lastplace_ignore_buftype in your vimrc. This is a comma separated list.
 By default it is set to:
 
-        let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+```vim
+    let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+```
 
 Closed folds are automatically opened when jumping to the last edit position. If you
 do not like this behavior you can disable it by putting this in your vimrc:
 
-        let g:lastplace_open_folds = 0
+```vim
+    let g:lastplace_open_folds = 0
+```
 
 ## Miscellaneous
 This plugin is complete and stable. Please do not be afraid to try it even
