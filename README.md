@@ -15,7 +15,7 @@ Advantages over the snippets that can be found around the net include:
 * Works properly with new file templates and scripts that jump to a specific line in them.
 
 ## Installation
-
+### Vim 8 & Beyond:
 You can install vim-lastplace as a vim plugin without any additional tools
 
 ```bash
@@ -23,14 +23,14 @@ mkdir -p ~/.vim/pack/plugins/start
 rm -rf ~/.vim/pack/plugins/start/vim-lastplace
 git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.vim/pack/plugins/start/vim-lastplace
 ```
-
+### Pathogen:
 You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
 
 ```bash
 cd ~/.vim/bundle
 git clone git://github.com/farmergreg/vim-lastplace.git
 ```
-
+### Preventing Conflicts:
 Depending on which Vim package you're using, Vim may be preconfigured with
 last-edit-position logic that doesn't work quite as well as vim-lastplace.
 If so, you may want to disable that in favor of vim-lastplace. For example,
