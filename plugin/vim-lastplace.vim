@@ -35,15 +35,6 @@ fu! s:lastplace()
 		return
 	endif
 
-	try
-		"if the file does not exist on disk (a new, unsaved file) then do nothing
-		if empty(glob(@%))
-			return
-		endif
-	catch
-		return
-	endtry
-
 	if line("'\"") > 0 && line("'\"") <= line("$")
 		"if the last edit position is set and is less than the
 		"number of lines in this buffer.
@@ -76,5 +67,5 @@ endf
 
 augroup lastplace_plugin
 	autocmd!
-	autocmd BufWinEnter * call s:lastplace()
+	autocmd BufReadPost * call s:lastplace()
 augroup END
