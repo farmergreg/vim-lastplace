@@ -65,7 +65,7 @@ fu! s:lastplace()
 			"bottom of the screen. We intentionally leave the
 			"last line blank by pressing <c-e> so the user has a
 			"clue that they are near the end of the file.
-			execute "normal! \G'\"\<c-e>"
+			execute "keepjumps normal! \G'\"\<c-e>"
 		endif
 	endif
 	if foldclosed(".") != -1 && g:lastplace_open_folds
