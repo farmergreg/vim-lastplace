@@ -71,9 +71,10 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
 ### 3.3.0
-- Change to BufRead, but this breaks fold handling (see #30). Please send patches! :)
+- use keepjumps to prevent the addition of unwanted marks.
+- Fix a bug with folds not opening. (#30)
+- Fix a bug when using multiple windows (#28)
 - vim8 package documentation
-- use keepjumps to prevent adding unwanted jump points.
 
 ### 3.2.1
 - Re-center screen when opening folds
