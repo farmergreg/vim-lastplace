@@ -13,7 +13,7 @@ Advantages over the snippets that can be found around the net include:
 * Works properly with new file templates and scripts that jump to a specific line in them.
 
 ## Installation
-### Vim 8:
+### vim 8:
 You can install vim-lastplace as a vim plugin without any additional tools when using Vim 8 or newer.
 
 ```bash
@@ -21,13 +21,15 @@ mkdir -p ~/.vim/pack/plugins/start
 rm -rf ~/.vim/pack/plugins/start/vim-lastplace
 git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.vim/pack/plugins/start/vim-lastplace
 ```
-### Pathogen:
-You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other plugin managers to install and use vim-lastplace.
 
+### neovim:
 ```bash
-cd ~/.vim/bundle
-git clone git://github.com/farmergreg/vim-lastplace.git
+~/.local/share/nvim/site/pack/*/start
+mkdir -p ~/.local/share/nvim/site/pack/plugins/start
+rm -rf ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
+git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
 ```
+
 ## Configuration
 You can configure what file types to ignore by setting g:lastplace_ignore in your vimrc.
 This is a comma separated list.
