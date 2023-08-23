@@ -16,7 +16,7 @@ By default git, svn, and mercurial commit messages are ignored because you proba
 ## Install
 
 ### vim:
-You can install vim-lastplace as a vim plugin without any additional tools when using Vim 8 or newer.
+You can install vim-lastplace as a vim plugin without any additional tools when using [vim](https://www.vim.org/) 8 or newer.
 
 ```bash
 mkdir -p ~/.vim/pack/plugins/start
@@ -25,6 +25,8 @@ git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.vim/pack/
 ```
 
 ### neovim:
+You can also install vim-lastplace and use it with [neovim](https://neovim.io/):
+
 ```bash
 mkdir -p ~/.local/share/nvim/site/pack/plugins/start
 rm -rf ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
