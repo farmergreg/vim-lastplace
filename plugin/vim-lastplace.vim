@@ -26,7 +26,7 @@ if !exists('g:lastplace_ignore_buftype')
 	let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 endif
 
-fu! s:lastplace_jump()
+fu! s:lastplace_jump()"{{{
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
 		return
    	endif
@@ -62,7 +62,7 @@ fu! s:lastplace_jump()
 			execute "keepjumps normal! \G'\"\<c-e>"
 		endif
 	endif
-endf
+endf"}}}
 
 fu! s:lastplace_open_folds()
 	if foldclosed(".") != -1 && g:lastplace_open_folds
