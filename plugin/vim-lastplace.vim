@@ -57,8 +57,8 @@ fu! s:lastplace()
 
 		else
 			"otherwise, show as much context as we can by jumping to the end of the file and then to the mark.
-			"If we pressed zz here, there would be blank lines at the bottom of the screen.
-			"We intentionally leave the last line blank by pressing <c-e> so the user can see that they are near the end of the file.
+			"if we pressed zz here, there would be blank lines at the bottom of the screen.
+			"we intentionally leave the last line blank by pressing <c-e> so the user can see that they are near the end of the file.
 			execute "keepjumps normal! \G'\"\<c-e>"
 		endif
 	endif
