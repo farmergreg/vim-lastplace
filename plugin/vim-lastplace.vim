@@ -26,7 +26,7 @@ if !exists('g:lastplace_ignore_buftype')
 	let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 endif
 
-fu! s:lastplace()
+fu! s:lastplace_jump()
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
 		return
    	endif
@@ -62,6 +62,9 @@ fu! s:lastplace()
 			execute "keepjumps normal! \G'\"\<c-e>"
 		endif
 	endif
+endf
+
+fu! s:lastplace_open_folds()
 	if foldclosed(".") != -1 && g:lastplace_open_folds
 		"if we're in a fold, make the current line visible and recenter screen
 		execute "normal! zvzz"
@@ -70,5 +73,6 @@ endf
 
 augroup lastplace_plugin
 	autocmd!
-	autocmd BufRead * call s:lastplace()
+	autocmd BufRead * call s:lastplace_jump()
+	autocmd BufWinEnter * call s:lastplace_open_folds()
 augroup END
