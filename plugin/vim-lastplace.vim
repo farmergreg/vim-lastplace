@@ -26,23 +26,31 @@ if !exists('g:lastplace_ignore_buftype')
 	let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 endif
 
-fu! s:lastplace_jump()"{{{
+fu! s:lastplace_can_run()
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
-		return
+		return "0"
    	endif
 
 	if index(split(g:lastplace_ignore, ","), &filetype) != -1
-		return
+		return "0"
 	endif
 
 	try
 		"if the file does not exist on disk (a new, unsaved file) then do nothing
 		if empty(glob(@%))
-			return
+			return "0"
 		endif
 	catch
-		return
+		return "0"
 	endtry
+
+	return "1"
+endf
+
+fu! s:lastplace_jump()"{{{
+	if s:lastplace_can_run() == 0
+		return
+	endif
 
 	if line("'\"") > 0 && line("'\"") <= line("$")
 		"if the last edit position is set and is less than the number of lines in this buffer.
@@ -65,6 +73,10 @@ fu! s:lastplace_jump()"{{{
 endf"}}}
 
 fu! s:lastplace_open_folds()
+	if s:lastplace_can_run() == 0
+		return
+	endif
+
 	if foldclosed(".") != -1 && g:lastplace_open_folds
 		"if we're in a fold, make the current line visible and recenter screen
 		execute "normal! zvzz"
