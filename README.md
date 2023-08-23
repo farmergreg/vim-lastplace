@@ -1,6 +1,6 @@
 # vim-lastplace v3.3.0
 
-A vim / nvim plugin that intelligently reopens files at your last edit position.
+A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
 ## Features
 * Commit Messages
