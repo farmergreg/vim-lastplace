@@ -28,23 +28,23 @@ endif
 
 fu! s:lastplace_can_run()
 	if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
-		return "0"
+		return 0
    	endif
 
 	if index(split(g:lastplace_ignore, ","), &filetype) != -1
-		return "0"
+		return 0
 	endif
 
 	try
 		"if the file does not exist on disk (a new, unsaved file) then do nothing
 		if empty(glob(@%))
-			return "0"
+			return 0
 		endif
 	catch
-		return "0"
+		return 0
 	endtry
 
-	return "1"
+	return 1
 endf
 
 fu! s:lastplace_jump()"{{{
