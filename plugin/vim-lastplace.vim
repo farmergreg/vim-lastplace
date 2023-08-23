@@ -48,7 +48,7 @@ fu! s:lastplace_can_run()
 endf
 
 fu! s:lastplace_jump()"{{{
-	if s:lastplace_can_run() == 0
+	if !s:lastplace_can_run()
 		return
 	endif
 
@@ -73,7 +73,7 @@ fu! s:lastplace_jump()"{{{
 endf"}}}
 
 fu! s:lastplace_open_folds()
-	if s:lastplace_can_run() == 0
+	if !s:lastplace_can_run()
 		return
 	endif
 
@@ -85,6 +85,6 @@ endf
 
 augroup lastplace_plugin
 	autocmd!
-	autocmd BufRead * call s:lastplace_jump()
+	autocmd BufRead     * call s:lastplace_jump()
 	autocmd BufWinEnter * call s:lastplace_open_folds()
 augroup END
