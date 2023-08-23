@@ -1,9 +1,7 @@
 # vim-lastplace v3.3.0
 
-Intelligently reopen files at your last edit position. By default git,
-svn, and mercurial commit messages are ignored because you
-probably want to type a new message and not re-edit the previous
-one.
+Intelligently reopen files at your last edit position.
+By default git, svn, and mercurial commit messages are ignored because you probably want to type a new message and not re-edit the previous one.
 
 ## Advantages
 Advantages over the snippets that can be found around the net include:
@@ -15,8 +13,8 @@ Advantages over the snippets that can be found around the net include:
 * Works properly with new file templates and scripts that jump to a specific line in them.
 
 ## Installation
-### Vim 8 & Beyond:
-You can install vim-lastplace as a vim plugin without any additional tools
+### Vim 8:
+You can install vim-lastplace as a vim plugin without any additional tools when using Vim 8 or newer.
 
 ```bash
 mkdir -p ~/.vim/pack/plugins/start
@@ -30,42 +28,38 @@ You can also use [pathogen.vim](https://github.com/tpope/vim-pathogen) or other 
 cd ~/.vim/bundle
 git clone git://github.com/farmergreg/vim-lastplace.git
 ```
-### Preventing Conflicts:
-Depending on which Vim package you're using, Vim may be preconfigured with
-last-edit-position logic that doesn't work quite as well as vim-lastplace.
-If so, you may want to disable that in favor of vim-lastplace. For example,
-for Vim as packaged with Git for Windows, you can edit
-`C:\Program Files\Git\etc\vimrc` and comment out the "Remember positions in files"
-`autocmd BufReadPost *` block.
-
 ## Configuration
-You can configure what file types to ignore by setting
-g:lastplace_ignore in your vimrc. This is a comma separated list.
+You can configure what file types to ignore by setting g:lastplace_ignore in your vimrc.
+This is a comma separated list.
 By default it is set to:
 
 ```vim
     let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
 ````
 
-You can configure buffer types to ignore by setting
-g:lastplace_ignore_buftype in your vimrc. This is a comma separated list.
+You can configure buffer types to ignore by setting g:lastplace_ignore_buftype in your vimrc.
+This is a comma separated list.
 By default it is set to:
 
 ```vim
     let g:lastplace_ignore_buftype = "quickfix,nofile,help"
 ```
 
-Closed folds are automatically opened when jumping to the last edit position. If you
-do not like this behavior you can disable it by putting this in your vimrc:
+Closed folds are automatically opened when jumping to the last edit position.
+If you do not like this behavior you can disable it by putting this in your vimrc:
 
 ```vim
     let g:lastplace_open_folds = 0
 ```
+### Preventing Conflicts:
+Depending on which Vim package you're using, Vim may be preconfigured with last-edit-position logic that doesn't work quite as well as vim-lastplace.
+If so, you may want to disable that in favor of vim-lastplace.
+For example, for Vim as packaged with Git for Windows, you can edit `C:\Program Files\Git\etc\vimrc` and comment out the "Remember positions in files" `autocmd BufReadPost *` block.
 
 ## Miscellaneous
-This plugin is complete and stable. Please do not be afraid to try it even
-if there is very little recent activity in this repository. If you do find
-a bug, please submit a pull request that fixes whatever problem you're having.
+This plugin is complete and stable.
+Please do not be afraid to try it even if there is very little recent activity in this repository.
+If you do find a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
