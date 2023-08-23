@@ -24,7 +24,6 @@ git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.vim/pack/
 
 ### neovim:
 ```bash
-~/.local/share/nvim/site/pack/*/start
 mkdir -p ~/.local/share/nvim/site/pack/plugins/start
 rm -rf ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
 git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
