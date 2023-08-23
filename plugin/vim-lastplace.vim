@@ -1,10 +1,10 @@
 " ============================================================================
 " File:        vim-lastplace.vim
 " Description: Reopen files where you left off. Configurable.
-" Author:      Gregory L. Dietsche <vim@gregd.org>
+" Author:      Gregory L. Dietsche <greg@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
-" Version:     3.2.1
+" Version:     3.3.0
 " ============================================================================
 
 if exists("b:loaded_lastplace_plugin") || &cp
@@ -45,26 +45,20 @@ fu! s:lastplace()
 	endtry
 
 	if line("'\"") > 0 && line("'\"") <= line("$")
-		"if the last edit position is set and is less than the
-		"number of lines in this buffer.
+		"if the last edit position is set and is less than the number of lines in this buffer.
 
 		if line("w$") == line("$")
-			"if the last line in the current buffer is
-			"also the last line visible in this window
+			"if the last line in the current buffer is also the last line visible in this window
 			execute "normal! g`\""
 
 		elseif line("$") - line("'\"") > ((line("w$") - line("w0")) / 2) - 1
-			"if we're not at the bottom of the file, center the
-			"cursor on the screen after we make the jump
+			"if we're not at the bottom of the file, center the cursor on the screen after we make the jump
 			execute "normal! g`\"zz"
 
 		else
-			"otherwise, show as much context as we can by jumping
-			"to the end of the file and then to the mark. If we
-			"pressed zz here, there would be blank lines at the
-			"bottom of the screen. We intentionally leave the
-			"last line blank by pressing <c-e> so the user has a
-			"clue that they are near the end of the file.
+			"otherwise, show as much context as we can by jumping to the end of the file and then to the mark.
+			"If we pressed zz here, there would be blank lines at the bottom of the screen.
+			"We intentionally leave the last line blank by pressing <c-e> so the user can see that they are near the end of the file.
 			execute "keepjumps normal! \G'\"\<c-e>"
 		endif
 	endif

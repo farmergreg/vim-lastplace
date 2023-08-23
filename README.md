@@ -1,4 +1,4 @@
-# vim-lastplace v3.2.1
+# vim-lastplace v3.3.0
 
 Intelligently reopen files at your last edit position. By default git,
 svn, and mercurial commit messages are ignored because you
@@ -69,6 +69,11 @@ a bug, please submit a pull request that fixes whatever problem you're having.
 
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
+
+### 3.3.0
+- Change to BufRead, but this breaks fold handling (see #30). Please send patches! :)
+- vim8 package documentation
+- use keepjumps to prevent adding unwanted jump points.
 
 ### 3.2.1
 - Re-center screen when opening folds
