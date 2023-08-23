@@ -18,12 +18,12 @@ if !exists('g:lastplace_ignore')
 	let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
 endif
 
-if !exists('g:lastplace_open_folds')
-	let g:lastplace_open_folds = 1
-endif
-
 if !exists('g:lastplace_ignore_buftype')
 	let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+endif
+
+if !exists('g:lastplace_open_folds')
+	let g:lastplace_open_folds = 1
 endif
 
 fu! s:lastplace_can_run()
