@@ -71,13 +71,14 @@ vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
 ### 3.3.0
 - Release Date: 2023-09-01
-- use [keepjumps](https://github.com/farmergreg/vim-lastplace/pull/31) to prevent the addition of unwanted marks.
+- Use [keepjumps](https://github.com/farmergreg/vim-lastplace/pull/31) to prevent the addition of unwanted marks.
 - Fix a bug with folds not opening. (Issue [#30](https://github.com/farmergreg/vim-lastplace/issues/30))
 - Fix a bug when using multiple windows (Issue [#28](https://github.com/farmergreg/vim-lastplace/issues/28))
 - Documentation Updates
     - vim8 installation documentation
     - nvim installation documentation
     - various other improvements
+    - pre-generated helptags
 
 ### 3.2.1
 - Release Date: 2020-01-20
