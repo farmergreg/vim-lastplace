@@ -1,13 +1,12 @@
 # vim-lastplace v4.0.0
 
-Intelligently reopen files at your last edit position.
-By default git, svn, and mercurial commit messages are ignored because you probably want to type a new message and not re-edit the previous one.
+A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
 ## Features
 * Commit Messages
     - Many version control systems re-use the same file for commit message editing.
     - vim-lastplace treats each commit message as if it were a new file.
-* Maximizes Context
+* Maximize Context
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
 * Opens folds if the last edit position is inside a fold.
