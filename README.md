@@ -50,7 +50,7 @@ By default it is set to:
 ```
 
 Closed folds are automatically opened when jumping to the last edit position.
-If you do not like this behavior you can disable it by putting this in your vimrc:
+If you do not like this behavior you can disable it by placing this in your vimrc:
 
 ```vim
     let g:lastplace_open_folds = 0
