@@ -3,9 +3,11 @@
 A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
 ## Features
+* Immediately jump to the last edit position when editing a file.
 * Commit Messages
     - Many version control systems re-use the same file for commit message editing.
-    - vim-lastplace treats each commit message as if it were a new file.
+    - It does not make sense in this case to jump to the last edit position.
+    - vim-lastplace automatically detects this and starts with your cursor at the beginning of the file.
 * Maximize Context
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
