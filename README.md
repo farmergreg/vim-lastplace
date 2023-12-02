@@ -12,7 +12,7 @@ A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intellige
     - Center the cursor vertically after restoring last edit position.
     - Keep as much of the file on screen as possible when last edit position is at the end of the file.
 * Opens folds if the last edit position is inside a fold.
-* Works properly with new file templates and scripts that jump to a specific line in them.
+* Works properly with new file templates and scripts that jump to a specific line.
 
 ## Install
 
