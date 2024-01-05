@@ -1,4 +1,4 @@
-# vim-lastplace v4.0.1
+# vim-lastplace v4.4.1
 
 A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
@@ -70,11 +70,11 @@ If you do find a bug, please submit a pull request that fixes whatever problem y
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
-### 4.0.1
+### 4.4.1
     - Unreleased
     - Improve README.md
 
-### 4.0.0
+### 4.4.0
 - Release Date: 2023-08-24
 - Use [keepjumps](https://github.com/farmergreg/vim-lastplace/pull/31) to prevent the addition of unwanted marks.
 - Fix a bug with folds not opening. (Issue [#30](https://github.com/farmergreg/vim-lastplace/issues/30))

@@ -2,7 +2,7 @@
 
 Author:  Gregory L. Dietsche <greg@gregd.org>
 License: MIT
-Version: 4.0.1
+Version: 4.4.1
 
 INTRODUCTION                                    *vim-lastplace-introduction*
 

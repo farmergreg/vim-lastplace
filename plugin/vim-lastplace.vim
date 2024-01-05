@@ -4,7 +4,7 @@
 " Author:      Gregory L. Dietsche <greg@gregd.org>
 " Licence:     MIT
 " Website:     https://www.gregd.org/
-" Version:     4.0.1
+" Version:     4.4.1
 " ============================================================================
 
 if exists("b:loaded_lastplace_plugin") || &cp
