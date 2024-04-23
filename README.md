@@ -40,7 +40,7 @@ This is a comma separated list.
 By default it is set to:
 
 ```vim
-    let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn"
 ````
 
 You can configure buffer types to ignore by setting g:lastplace_ignore_buftype in your vimrc.
@@ -48,7 +48,7 @@ This is a comma separated list.
 By default it is set to:
 
 ```vim
-    let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+    let g:lastplace_ignore_buftype = "help,nofile,quickfix"
 ```
 
 Closed folds are automatically opened when jumping to the last edit position.

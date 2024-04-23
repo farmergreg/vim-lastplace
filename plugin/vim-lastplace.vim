@@ -15,11 +15,11 @@ let b:loaded_lastplace_plugin = 1
 scriptencoding utf-8
 
 if !exists('g:lastplace_ignore')
-    let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn"
 endif
 
 if !exists('g:lastplace_ignore_buftype')
-    let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+    let g:lastplace_ignore_buftype = "help,nofile,quickfix"
 endif
 
 if !exists('g:lastplace_open_folds')
