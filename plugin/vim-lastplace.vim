@@ -15,7 +15,7 @@ let b:loaded_lastplace_plugin = 1
 scriptencoding utf-8
 
 if !exists('g:lastplace_ignore')
-    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn"
+    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn,xxd"
 endif
 
 if !exists('g:lastplace_ignore_buftype')

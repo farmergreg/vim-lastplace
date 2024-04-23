@@ -40,7 +40,7 @@ This is a comma separated list.
 By default it is set to:
 
 ```vim
-    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn"
+    let g:lastplace_ignore = "gitcommit,gitrebase,hgcommit,svn,xxd"
 ````
 
 You can configure buffer types to ignore by setting g:lastplace_ignore_buftype in your vimrc.
@@ -73,6 +73,7 @@ vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 ### 4.4.1
     - Unreleased
     - Improve README.md
+    - Add xxd to g:lastplace_ignore
 
 ### 4.4.0
 - Release Date: 2023-08-24
