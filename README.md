@@ -71,10 +71,10 @@ If you do find a bug, please submit a pull request that fixes whatever problem y
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
 ### 4.5.0
-    - Release Date: 2024-04-23
-    - Improve README.md
-    - Add xxd to g:lastplace_ignore
-    - Alphabetize g:lastplace_ignore and g:lastplace_ignore_buftype
+- Release Date: 2024-04-23
+- Improve README.md
+- Add xxd to g:lastplace_ignore
+- Alphabetize g:lastplace_ignore and g:lastplace_ignore_buftype
 
 ### 4.4.0
 - Release Date: 2023-08-24
