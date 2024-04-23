@@ -1,4 +1,4 @@
-# vim-lastplace v4.4.1
+# vim-lastplace v4.5.0
 
 A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
@@ -70,10 +70,11 @@ If you do find a bug, please submit a pull request that fixes whatever problem y
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
 
-### 4.4.1
-    - Unreleased
+### 4.5.0
+    - Release Date: 2024-04-23
     - Improve README.md
     - Add xxd to g:lastplace_ignore
+    - Alphabetize g:lastplace_ignore and g:lastplace_ignore_buftype
 
 ### 4.4.0
 - Release Date: 2023-08-24
