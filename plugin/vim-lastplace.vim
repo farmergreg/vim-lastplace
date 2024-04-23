@@ -27,7 +27,7 @@ if !exists('g:lastplace_open_folds')
 endif
 
 fu! s:lastplace_can_run()
-    if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1 
+    if index(split(g:lastplace_ignore_buftype, ","), &buftype) != -1
         return 0
        endif
 
