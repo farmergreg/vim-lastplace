@@ -34,6 +34,19 @@ rm -rf ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
 git clone --depth=1 https://github.com/farmergreg/vim-lastplace.git ~/.local/share/nvim/site/pack/plugins/start/vim-lastplace
 ```
 
+### vim-plug:
+You can install vim-lastplace using the [vim-plug](https://github.com/junegunn/vim-plug) plugin manager. add the following line to your .vimrc:
+
+```vim
+call plug#begin()
+
+Plug 'farmergreg/vim-lastplace'
+
+call plug#end()
+```
+
+and run `:PlugInstall`.
+
 ## Configure
 You can configure what file types to ignore by setting g:lastplace_ignore in your vimrc.
 This is a comma separated list.
