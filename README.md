@@ -1,4 +1,4 @@
-# vim-lastplace v4.5.0
+# vim-lastplace v4.6.0
 
 A [vim](https://www.vim.org/) / [nvim](https://neovim.io/) plugin that intelligently reopens files at your last edit position.
 
@@ -69,6 +69,10 @@ If you do find a bug, please submit a pull request that fixes whatever problem y
 
 ## Version History
 vim-lastplace uses [semver](http://semver.org/) to manage version numbers.
+
+### 4.6.0
+- Release Date: tbd
+- Restore column correctly when jumping to the end of a file. (Issue [#35](https://github.com/farmergreg/vim-lastplace/pull/35))
 
 ### 4.5.0
 - Release Date: 2024-04-23
