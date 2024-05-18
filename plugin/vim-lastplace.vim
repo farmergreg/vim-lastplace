@@ -67,7 +67,7 @@ fu! s:lastplace_jump()"{{{
             "otherwise, show as much context as we can by jumping to the end of the file and then to the mark.
             "if we pressed zz here, there would be blank lines at the bottom of the screen.
             "we intentionally leave the last line blank by pressing <c-e> so the user can see that they are near the end of the file.
-            execute "keepjumps normal! \G'\"\<c-e>"
+            execute "keepjumps normal! \G`\"\<c-e>"
         endif
     endif
 endf"}}}
